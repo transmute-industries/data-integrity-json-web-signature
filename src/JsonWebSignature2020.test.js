@@ -19,8 +19,9 @@ const document = {
 };
 
 it('sign and verify', async () => {
-  const key = await JsonWebKey2020.generate('EdDSA');
-  const suite = new JsonWebSignature2020({key});
+  const suite = new JsonWebSignature2020({
+    key: await JsonWebKey2020.generate('EdDSA'),
+  });
   const proof = await suite.getProof({document, documentLoader});
   const verified = await suite.verifyProof({document, proof, documentLoader});
   expect(verified).toBe(true);
