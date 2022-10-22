@@ -17,5 +17,3 @@
 This repo contains experimental implementation of the W3C Data Integrity Proof Suite for Verifiable Credentials built on JSON Web Signatures.
 
 See [w3c/vc-jws-2020](https://github.com/w3c/vc-jws-2020).
-
-## Use
