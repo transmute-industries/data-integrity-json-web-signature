@@ -1,0 +1,40 @@
+{
+  "name": "@transmute/data-integrity-json-web-signature",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "homepage": "https://github.com/transmute-industries/data-integrity-json-web-signature#readme",
+  "description": "Data Integrity Proofs with JSON Web Signatures",
+  "author": "Orie Steele",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transmute-industries/data-integrity-json-web-signature.git"
+  },
+  "bugs": {
+    "url": "https://github.com/transmute-industries/data-integrity-json-web-signature/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "data-integrity-json-web-signature": "NODE_NO_WARNINGS=1 node ./src/cli.js",
+    "test": "jest",
+    "test-ci": "jest --ci --coverage",
+    "lint": "eslint ./src/**/*.js ./tests/**/*.js",
+    "lint:fix": "eslint ./src/**/*.js ./tests/**/*.js --fix",
+    "shove": "git add -A; git commit -m ':rocket:'; git push origin main"
+  },
+  "bin": {
+    "data-integrity-json-web-signature": "./src/cli.js"
+  },
+  "dependencies": {
+    "jose": "^4.9.2",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^29.0.3",
+    "prettier": "^2.7.1"
+  }
+}
