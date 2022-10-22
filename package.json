@@ -18,7 +18,7 @@
   },
   "scripts": {
     "data-integrity-json-web-signature": "NODE_NO_WARNINGS=1 node ./src/cli.js",
-    "test": "jest",
+    "test": "NODE_NO_WARNINGS=1 node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test-ci": "jest --ci --coverage",
     "lint": "eslint ./src/**/*.js ./tests/**/*.js",
     "lint:fix": "eslint ./src/**/*.js ./tests/**/*.js --fix",
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "jose": "^4.9.2",
+    "jsonld": "^8.1.0",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
