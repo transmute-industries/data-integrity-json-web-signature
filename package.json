@@ -19,7 +19,7 @@
   "scripts": {
     "data-integrity-json-web-signature": "NODE_NO_WARNINGS=1 node ./src/cli.js",
     "test": "NODE_NO_WARNINGS=1 node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test-ci": "jest --ci --coverage",
+    "test-ci": "NODE_NO_WARNINGS=1 node --experimental-vm-modules node_modules/jest/bin/jest.js --ci --coverage",
     "lint": "eslint ./src/**/*.js ./tests/**/*.js",
     "lint:fix": "eslint ./src/**/*.js ./tests/**/*.js --fix",
     "shove": "git add -A; git commit -m ':rocket:'; git push origin main"

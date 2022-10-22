@@ -5,12 +5,12 @@
 <did:example:456> <https://www.w3.org/ns/credentials/claims/private#claimName> "It’s a dangerous business, Frodo, going out your door. 🧠💎" .
 <http://example.edu/credentials/1872> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
 <http://example.edu/credentials/1872> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/credentials/claims/private#NewCredentialType> .
-<http://example.edu/credentials/1872> <https://w3id.org/security#proof> _:c14n1 .
+<http://example.edu/credentials/1872> <https://w3id.org/security#proof> _:c14n0 .
 <http://example.edu/credentials/1872> <https://www.w3.org/2018/credentials#credentialSubject> <did:example:456> .
 <http://example.edu/credentials/1872> <https://www.w3.org/2018/credentials#issuanceDate> "2010-01-01T19:23:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://example.edu/credentials/1872> <https://www.w3.org/2018/credentials#issuer> <did:example:123> .
-_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/credentials/claims/private#JsonWebSignature2020> _:c14n1 .
-_:c14n0 <https://www.w3.org/ns/credentials/claims/private#created> "2022-10-22T19:00:03.504Z" _:c14n1 .
-_:c14n0 <https://www.w3.org/ns/credentials/claims/private#jws> "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..D8QAzOvKKqUKbDtan3wPbHr_etjdyZGFZk445VKbnpT4p1BB17UeaoW0lQ6-8eJABblfRNgAIhdzsmK72qhNDA" _:c14n1 .
-_:c14n0 <https://www.w3.org/ns/credentials/claims/private#proofPurpose> "assertionMethod" _:c14n1 .
-_:c14n0 <https://www.w3.org/ns/credentials/claims/private#verificationMethod> "urn:ietf:params:oauth:jwk-thumbprint:sha-256:xeDI0Hi-ZcrJ5iHXrRnC4I0A46Rd7xUrT73zoiMuEmM#0" _:c14n1 .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/credentials/claims/private#JsonWebSignature2020> _:c14n0 .
+_:c14n1 <https://www.w3.org/ns/credentials/claims/private#created> "2022-10-22T22:15:42.574Z" _:c14n0 .
+_:c14n1 <https://www.w3.org/ns/credentials/claims/private#jws> "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..yFC5Tfm4peMtobMYO1ziyU5F47i7I_6MGjoPbu1i0aU3WVSSKJFrR4_iwXXFqFnXIR8Br5GMFgCpKfOYU8Q6Ag" _:c14n0 .
+_:c14n1 <https://www.w3.org/ns/credentials/claims/private#proofPurpose> "assertionMethod" _:c14n0 .
+_:c14n1 <https://www.w3.org/ns/credentials/claims/private#verificationMethod> "urn:ietf:params:oauth:jwk-thumbprint:sha-256:Qjx-yafn5LHWEihFY1ydTh8HN5NXsGH8QQPmpg4sk-k#0" _:c14n0 .
