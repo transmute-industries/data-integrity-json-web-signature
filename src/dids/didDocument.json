@@ -1,0 +1,31 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    { "@vocab": "https://www.iana.org/assignments/jose#" }
+  ],
+  "id": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:wTnE6U97WqXkd2kV8JozVMtwv3fwcxLIPtnojeiJE84",
+  "verificationMethod": [
+    {
+      "id": "#0",
+      "type": "JsonWebKey2020",
+      "controller": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:wTnE6U97WqXkd2kV8JozVMtwv3fwcxLIPtnojeiJE84",
+      "publicKeyJwk": {
+        "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:wTnE6U97WqXkd2kV8JozVMtwv3fwcxLIPtnojeiJE84",
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "alg": "EdDSA",
+        "x": "Ti3DyIihUlHiENlPnAZFO1onuU0tDL9QQoscieEP4Vs"
+      },
+      "privateKeyJwk": {
+        "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:wTnE6U97WqXkd2kV8JozVMtwv3fwcxLIPtnojeiJE84",
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "alg": "EdDSA",
+        "x": "Ti3DyIihUlHiENlPnAZFO1onuU0tDL9QQoscieEP4Vs",
+        "d": "EFl6Tr9LiDk4xjILTLY1jks_PUViZ53XL2XDyYjntaI"
+      }
+    }
+  ],
+  "assertionMethod": ["#0"],
+  "authentication": ["#0"]
+}

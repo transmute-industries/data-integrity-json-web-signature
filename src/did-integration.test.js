@@ -1,4 +1,5 @@
-const jsonld = require('jsonld');
+const JsonWebKey2020 = require('./JsonWebKey2020');
+const JsonWebSignature2020 = require('./JsonWebSignature2020');
 const documentLoader = require('./documentLoader');
 
 const document = {
@@ -17,12 +18,16 @@ const document = {
   },
 };
 
-it('can cannonize', async () => {
-  const c = await jsonld.canonize(document, {
-    algorithm: 'URDNA2015',
-    format: 'application/n-quads',
+const keypair = require('./dids/key.json');
+
+it('canonize', async () => {
+  const signer = new JsonWebSignature2020({
+    key: await JsonWebKey2020.from(keypair),
+  });
+  const protectedDocument = await signer.addProof({document, documentLoader});
+  const verifier = new JsonWebSignature2020({
     documentLoader,
   });
-  console.log(c);
-  expect(c).toBeDefined();
+  const verified = await verifier.verify({document: protectedDocument});
+  expect(verified).toBe(true);
 });
